@@ -6,10 +6,18 @@ button.addEventListener("click", () => {
     const link = document.getElementById("link").value;
     const timeStart = document.getElementById("tiempoInicio").value;
     const timeEnd = document.getElementById("tiempoFin").value;
-    const nota = document.getElementById("nota").value;
+    const note = document.getElementById("nota").value;
     const codeMd = document.getElementById("codeMd");
-    codeMd.innerHTML = `### [${timeStart} - ${timeEnd}] ${[title]}
-[🎧 Play ${platform} - 2min️ (${timeStart} - ${timeEnd})](${link})
+    
+    let content = `### [${timeStart} - ${timeEnd}] ${[title]}
+[🎧 Play ${platform} - (${timeStart} - ${timeEnd})](${link})`
+
+// if theren't notes, don't add anything
+    if (note != "") {
+        content += `
 #### Note
-${nota}`
+${note}`;
+    }
+
+    codeMd.innerHTML = content;
 });
