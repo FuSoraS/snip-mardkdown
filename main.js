@@ -1,15 +1,15 @@
 const button = document.getElementById("buttonSubmit");
 
 button.addEventListener("click", () => {
-    const titulo = document.getElementById("titulo").value;
-    const plataforma = document.getElementById("plataforma").value;
+    const title = document.getElementById("titulo").value;
+    const platform = document.getElementById("plataforma").value;
     const link = document.getElementById("link").value;
-    const tiempoInicio = document.getElementById("tiempoInicio").value;
-    const tiempoFin = document.getElementById("tiempoFin").value;
+    const timeStart = document.getElementById("tiempoInicio").value;
+    const timeEnd = document.getElementById("tiempoFin").value;
     const nota = document.getElementById("nota").value;
     const codeMd = document.getElementById("codeMd");
-    codeMd.innerHTML = `### [${tiempoInicio} - ${tiempoFin}] ${[titulo]}
-[🎧 Play ${plataforma} - 2min️ (${tiempoInicio} - ${tiempoFin})](${link})
+    codeMd.innerHTML = `### [${timeStart} - ${timeEnd}] ${[title]}
+[🎧 Play ${platform} - 2min️ (${timeStart} - ${timeEnd})](${link})
 #### Note
 ${nota}`
 });
