@@ -1,0 +1,32 @@
+body {
+    background-color: #d8cfce;
+    font-family: sans-serif;
+    text-align: center;
+}
+.title {
+    font-size: 1.2rem;
+}
+.block {
+    display: block;
+}
+.button-submit {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid #000;
+    &:hover {
+        background-color: #000;
+        color: #fff;
+    }
+}
+.code-markdowm {
+    padding: 20px;
+    text-align: start;
+    background-color: rgb(154, 255, 248);
+    color: #fff;
+    background-color: #000;
+    font-size: 1rem;
+}
