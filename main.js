@@ -19,5 +19,5 @@ button.addEventListener("click", () => {
 ${note}`;
     }
 
-    codeMd.innerHTML = content;
+    codeMd.textContent = content;
 });
